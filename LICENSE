@@ -20,7 +20,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
----
-The Criteo Uplift Prediction Dataset is NOT part of this repository and is NOT covered by
-this licence. It is distributed by Criteo AI Lab under CC BY-NC-SA 4.0
-(Diemert et al., 2018). `make data` downloads it to data/ (git-ignored).
