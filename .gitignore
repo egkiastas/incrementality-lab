@@ -1,0 +1,24 @@
+# data and model outputs (the Criteo data is CC BY-NC-SA and is downloaded, never committed)
+data/
+artifacts/
+build/
+tests/fixtures/
+*.parquet
+*.csv
+*.csv.gz
+
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+.ipynb_checkpoints/
+report/report.ipynb
+_site/
+
+.DS_Store
+.idea/
+.vscode/
