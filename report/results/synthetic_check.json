@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "step": "synthetic_check",
+    "seed": 20261119,
+    "generated_at": "2026-11-20T04:28:42"
+  },
+  "true_ate": 0.05197391603588374,
+  "ate": {
+    "diff_in_means": {
+      "estimate": 0.048980398572911726,
+      "se": 0.002418397586476289,
+      "ci_low": 0.044240426403119607,
+      "ci_high": 0.053720370742703846,
+      "p_value": 3.3259305699222636e-91,
+      "covers_truth": true
+    },
+    "cuped_linear": {
+      "estimate": 0.04972268270892069,
+      "se": 0.0022861824281448415,
+      "ci_low": 0.04524184748766847,
+      "ci_high": 0.05420351793017291,
+      "p_value": 7.02654531873133e-105,
+      "covers_truth": true
+    },
+    "cupac": {
+      "estimate": 0.04937080857437001,
+      "se": 0.002254494919794724,
+      "ci_low": 0.04495207972824383,
+      "ci_high": 0.05378953742049619,
+      "p_value": 2.665173723857895e-106,
+      "covers_truth": true
+    },
+    "aipw_known_propensity": {
+      "estimate": 0.04933254848167041,
+      "se": 0.002265696471203936,
+      "ci_low": 0.044891864998211205,
+      "ci_high": 0.05377323196512961,
+      "p_value": 4.121787436944961e-105,
+      "covers_truth": true
+    }
+  },
+  "iv": {
+    "estimate": 0.08042967932406463,
+    "se": 0.003967778742324113,
+    "ci_low": 0.07265297589048574,
+    "ci_high": 0.08820638275764352,
+    "p_value": 2.3328255697304305e-91,
+    "truth": 0.08542751773458733,
+    "covers_truth": true
+  },
+  "replications": {
+    "n": 300,
+    "coverage_diff_in_means": 0.9233333333333333,
+    "coverage_cuped": 0.93,
+    "bias_cuped": -0.0008861437818773253,
+    "mc_se_bias_cuped": 0.0006562395047417432,
+    "variance_ratio_cuped_vs_dim": 0.8085219448458338
+  },
+  "cate": {
+    "s_learner": {
+      "corr_with_true_cate": 0.8800754944656476,
+      "qini": 0.09126303080498337
+    },
+    "t_learner": {
+      "corr_with_true_cate": 0.7264636661375072,
+      "qini": 0.06860356262807761
+    },
+    "x_learner": {
+      "corr_with_true_cate": 0.900070159406493,
+      "qini": 0.0937855457749009
+    },
+    "dr_learner": {
+      "corr_with_true_cate": 0.889950559871434,
+      "qini": 0.09181353362403206
+    },
+    "causal_forest": {
+      "corr_with_true_cate": 0.9047662791800798,
+      "qini": 0.09856025453118845
+    },
+    "response_model": {
+      "corr_with_true_cate": 0.19081702917507556,
+      "qini": 0.017919198978131642
+    },
+    "oracle": {
+      "corr_with_true_cate": 1.0,
+      "qini": 0.10096212467077584
+    }
+  },
+  "sequential": {
+    "n_sims": 400,
+    "fpr_fixed_horizon": 0.0625,
+    "fpr_naive_peeking": 0.375,
+    "fpr_msprt": 0.0025
+  }
+}

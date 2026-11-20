@@ -1,0 +1,1142 @@
+{
+  "meta": {
+    "step": "policy",
+    "seed": 20261119,
+    "generated_at": "2026-11-20T04:27:42"
+  },
+  "population": 1000000,
+  "budgets": [
+    0.1,
+    0.2,
+    0.3,
+    0.5
+  ],
+  "visit": {
+    "best_model": "x_learner",
+    "test_ate_dr": {
+      "estimate": 0.007577659560967426,
+      "ci": [
+        0.00711535183564504,
+        0.008039967286289812
+      ]
+    },
+    "test_ate_naive": {
+      "estimate": 0.010341613677209253,
+      "se": 0.0002671380525026644,
+      "ci_low": 0.009818032715403862,
+      "ci_high": 0.010865194639014645,
+      "p_value": 0.0
+    },
+    "budget_table": [
+      {
+        "budget": 0.1,
+        "random": {
+          "incremental": 757.7659560967426,
+          "ci": [
+            711.535183564504,
+            803.9967286289811
+          ],
+          "share_of_total_incremental": 0.1,
+          "incremental_naive": 1034.1613677209255
+        },
+        "s_learner": {
+          "incremental": 6016.799634504029,
+          "ci": [
+            5668.963350013903,
+            6364.635918994156
+          ],
+          "share_of_total_incremental": 0.794018203918345,
+          "incremental_naive": 6236.061239731166
+        },
+        "t_learner": {
+          "incremental": 5515.873571022276,
+          "ci": [
+            5178.664874590343,
+            5853.08226745421
+          ],
+          "share_of_total_incremental": 0.7279125601570408,
+          "incremental_naive": 5972.6426792340635
+        },
+        "x_learner": {
+          "incremental": 6012.091576710855,
+          "ci": [
+            5671.747894479303,
+            6352.435258942409
+          ],
+          "share_of_total_incremental": 0.7933968962764149,
+          "incremental_naive": 6440.192281972437
+        },
+        "dr_learner": {
+          "incremental": 5923.334337006715,
+          "ci": [
+            5584.264421283482,
+            6262.404252729949
+          ],
+          "share_of_total_incremental": 0.7816838813289858,
+          "incremental_naive": 6278.392510608189
+        },
+        "causal_forest": {
+          "incremental": 5787.331502052367,
+          "ci": [
+            5431.551791179038,
+            6143.111212925695
+          ],
+          "share_of_total_incremental": 0.7637360131435503,
+          "incremental_naive": 5827.63880473991
+        },
+        "response_model": {
+          "incremental": 5082.138039759832,
+          "ci": [
+            4688.374668964327,
+            5475.901410555337
+          ],
+          "share_of_total_incremental": 0.6706738405005629,
+          "incremental_naive": 4948.139438619747
+        },
+        "lift_vs_random": 7.933968962764148,
+        "lift_vs_response": 1.1829847063727081
+      },
+      {
+        "budget": 0.2,
+        "random": {
+          "incremental": 1515.5319121934851,
+          "ci": [
+            1423.070367129008,
+            1607.9934572579623
+          ],
+          "share_of_total_incremental": 0.2,
+          "incremental_naive": 2068.322735441851
+        },
+        "s_learner": {
+          "incremental": 6971.801013457071,
+          "ci": [
+            6567.260068074922,
+            7376.341958839221
+          ],
+          "share_of_total_incremental": 0.9200467449565648,
+          "incremental_naive": 7883.73802933971
+        },
+        "t_learner": {
+          "incremental": 6417.59238447981,
+          "ci": [
+            6039.908265844598,
+            6795.276503115023
+          ],
+          "share_of_total_incremental": 0.8469095679010009,
+          "incremental_naive": 7816.193520828724
+        },
+        "x_learner": {
+          "incremental": 6892.07138527114,
+          "ci": [
+            6500.021725802961,
+            7284.121044739318
+          ],
+          "share_of_total_incremental": 0.9095250756278687,
+          "incremental_naive": 8152.540931425861
+        },
+        "dr_learner": {
+          "incremental": 6742.008901259815,
+          "ci": [
+            6353.127793348342,
+            7130.8900091712885
+          ],
+          "share_of_total_incremental": 0.8897217995894071,
+          "incremental_naive": 7953.696714627839
+        },
+        "causal_forest": {
+          "incremental": 6707.124210556302,
+          "ci": [
+            6294.729070020771,
+            7119.5193510918325
+          ],
+          "share_of_total_incremental": 0.8851181762116556,
+          "incremental_naive": 7728.4438635443985
+        },
+        "response_model": {
+          "incremental": 6797.177577317761,
+          "ci": [
+            6357.946651190752,
+            7236.408503444769
+          ],
+          "share_of_total_incremental": 0.8970022369875347,
+          "incremental_naive": 7617.450720023184
+        },
+        "lift_vs_random": 4.547625378139343,
+        "lift_vs_response": 1.0139607663436718
+      },
+      {
+        "budget": 0.3,
+        "random": {
+          "incremental": 2273.2978682902276,
+          "ci": [
+            2134.6055506935118,
+            2411.9901858869434
+          ],
+          "share_of_total_incremental": 0.3,
+          "incremental_naive": 3102.484103162776
+        },
+        "s_learner": {
+          "incremental": 7240.567268309704,
+          "ci": [
+            6811.697424899449,
+            7669.437111719958
+          ],
+          "share_of_total_incremental": 0.9555149858679206,
+          "incremental_naive": 8863.113286739208
+        },
+        "t_learner": {
+          "incremental": 6579.371380706727,
+          "ci": [
+            6189.277254827178,
+            6969.465506586277
+          ],
+          "share_of_total_incremental": 0.8682590353619358,
+          "incremental_naive": 8616.669696255338
+        },
+        "x_learner": {
+          "incremental": 7006.7437761327155,
+          "ci": [
+            6599.836039041625,
+            7413.651513223806
+          ],
+          "share_of_total_incremental": 0.9246580319106046,
+          "incremental_naive": 8986.782531864419
+        },
+        "dr_learner": {
+          "incremental": 7020.749956081247,
+          "ci": [
+            6610.51357872694,
+            7430.986333435553
+          ],
+          "share_of_total_incremental": 0.9265063836128474,
+          "incremental_naive": 8929.394976463136
+        },
+        "causal_forest": {
+          "incremental": 7053.353406220315,
+          "ci": [
+            6626.365230558225,
+            7480.341581882405
+          ],
+          "share_of_total_incremental": 0.930808958817863,
+          "incremental_naive": 8769.034383708082
+        },
+        "response_model": {
+          "incremental": 7215.57904151027,
+          "ci": [
+            6763.960051511475,
+            7667.198031509064
+          ],
+          "share_of_total_incremental": 0.9522173678371307,
+          "incremental_naive": 8782.840378953255
+        },
+        "lift_vs_random": 3.0821934397020154,
+        "lift_vs_response": 0.9710577260430309
+      },
+      {
+        "budget": 0.5,
+        "random": {
+          "incremental": 3788.829780483713,
+          "ci": [
+            3557.6759178225198,
+            4019.9836431449057
+          ],
+          "share_of_total_incremental": 0.5,
+          "incremental_naive": 5170.806838604627
+        },
+        "s_learner": {
+          "incremental": 7475.805477459386,
+          "ci": [
+            7034.807940061615,
+            7916.803014857155
+          ],
+          "share_of_total_incremental": 0.9865586355934105,
+          "incremental_naive": 9948.605139360716
+        },
+        "t_learner": {
+          "incremental": 6732.832453018114,
+          "ci": [
+            6335.691391585758,
+            7129.973514450471
+          ],
+          "share_of_total_incremental": 0.8885108124544125,
+          "incremental_naive": 9283.39414815427
+        },
+        "x_learner": {
+          "incremental": 7230.990808726908,
+          "ci": [
+            6813.75655946355,
+            7648.225057990266
+          ],
+          "share_of_total_incremental": 0.9542512104890261,
+          "incremental_naive": 9982.180279170305
+        },
+        "dr_learner": {
+          "incremental": 7287.396776550802,
+          "ci": [
+            6861.037617627471,
+            7713.755935474134
+          ],
+          "share_of_total_incremental": 0.9616949294064663,
+          "incremental_naive": 9867.736177962088
+        },
+        "causal_forest": {
+          "incremental": 7310.511285959294,
+          "ci": [
+            6872.823186111665,
+            7748.199385806924
+          ],
+          "share_of_total_incremental": 0.9647452788214168,
+          "incremental_naive": 9704.451504482813
+        },
+        "response_model": {
+          "incremental": 7461.453553363444,
+          "ci": [
+            7002.381917199152,
+            7920.525189527737
+          ],
+          "share_of_total_incremental": 0.9846646571188604,
+          "incremental_naive": 9842.986419912055
+        },
+        "lift_vs_random": 1.9085024209780521,
+        "lift_vs_response": 0.9691128889313196
+      }
+    ],
+    "response_model": {
+      "deciles": [
+        {
+          "share_of_users": 0.10000004768855937,
+          "dr_uplift": 0.05082092116483598,
+          "dr_ci": [
+            0.04688329674301949,
+            0.054758545586652475
+          ],
+          "dr_p_value": 3.511638951613618e-141,
+          "naive_uplift": 0.049480358312037565,
+          "control_rate": 0.3247465200206221,
+          "decile": 1
+        },
+        {
+          "share_of_users": 0.10000004768855937,
+          "dr_uplift": 0.017150696770770493,
+          "dr_ci": [
+            0.015205888412066314,
+            0.019095505129474673
+          ],
+          "dr_p_value": 6.17133109515503e-67,
+          "naive_uplift": 0.016399834793005656,
+          "control_rate": 0.053870208581836936,
+          "decile": 2
+        },
+        {
+          "share_of_users": 0.10000004768855937,
+          "dr_uplift": 0.004184087252792552,
+          "dr_ci": [
+            0.0031361416024416736,
+            0.005232032903143431
+          ],
+          "dr_p_value": 5.057903626699622e-15,
+          "naive_uplift": 0.0041068202290228065,
+          "control_rate": 0.015008583082665323,
+          "decile": 3
+        },
+        {
+          "share_of_users": 0.10000004768855937,
+          "dr_uplift": 0.001875614809124015,
+          "dr_ci": [
+            0.001233616209048785,
+            0.002517613409199245
+          ],
+          "dr_p_value": 1.0277575925011793e-08,
+          "naive_uplift": 0.0018789441672306196,
+          "control_rate": 0.00558458217313769,
+          "decile": 4
+        },
+        {
+          "share_of_users": 0.10000004768855937,
+          "dr_uplift": 0.0005831753337365699,
+          "dr_ci": [
+            7.24596140560948e-05,
+            0.001093891053417045
+          ],
+          "dr_p_value": 0.02521839039561704,
+          "naive_uplift": 0.0005904426641423514,
+          "control_rate": 0.0036251050191368206,
+          "decile": 5
+        },
+        {
+          "share_of_users": 0.10000004768855937,
+          "dr_uplift": 0.0002627991721387464,
+          "dr_ci": [
+            -0.00010711599041970818,
+            0.0006327143346972009
+          ],
+          "dr_p_value": 0.16379554454207157,
+          "naive_uplift": 0.00026418392648232237,
+          "control_rate": 0.0018717755127721154,
+          "decile": 6
+        },
+        {
+          "share_of_users": 0.10000004768855937,
+          "dr_uplift": 0.000406214356334302,
+          "dr_ci": [
+            0.00016716118047369803,
+            0.0006452675321949059
+          ],
+          "dr_p_value": 0.0008669158834115827,
+          "naive_uplift": 0.00040488659747853,
+          "control_rate": 0.0007390401912069942,
+          "decile": 7
+        },
+        {
+          "share_of_users": 0.10000004768855937,
+          "dr_uplift": 0.00020621132768809832,
+          "dr_ci": [
+            9.066143808358977e-06,
+            0.0004033565115678377
+          ],
+          "dr_p_value": 0.04035495351265326,
+          "naive_uplift": 0.00020325993067223612,
+          "control_rate": 0.0005167877724880982,
+          "decile": 8
+        },
+        {
+          "share_of_users": 0.09999980924576252,
+          "dr_uplift": 0.0002206030865547236,
+          "dr_ci": [
+            4.300352354527412e-05,
+            0.00039820264956417313
+          ],
+          "dr_p_value": 0.014910531190207587,
+          "naive_uplift": 0.0002195353983532476,
+          "control_rate": 0.0004119921404576282,
+          "decile": 9
+        },
+        {
+          "share_of_users": 0.09999980924576252,
+          "dr_uplift": 6.623688289814735e-05,
+          "dr_ci": [
+            -0.0001035816175631125,
+            0.0002360553833594072
+          ],
+          "dr_p_value": 0.44458455625588156,
+          "naive_uplift": 6.631396734581372e-05,
+          "control_rate": 0.0003966931657701401,
+          "decile": 10
+        }
+      ],
+      "spearman_with_uplift_score": 0.7635196611454035,
+      "top_decile_overlap": 0.6337153989036379,
+      "top_response_decile": {
+        "share_of_users": 0.09999980924576252,
+        "dr_uplift": 0.05082138039759832,
+        "dr_ci": [
+          0.04688374668964327,
+          0.05475901410555337
+        ],
+        "dr_p_value": 3.496641574228773e-141,
+        "naive_uplift": 0.049481394386197475,
+        "control_rate": 0.3247465200206221
+      },
+      "top_uplift_decile": {
+        "share_of_users": 0.09999980924576252,
+        "dr_uplift": 0.060120915767108554,
+        "dr_ci": [
+          0.05671747894479303,
+          0.06352435258942409
+        ],
+        "dr_p_value": 1.1666672424241204e-262,
+        "naive_uplift": 0.06440192281972437,
+        "control_rate": 0.21324595799538057
+      }
+    },
+    "do_not_disturb": {
+      "predicted_negative": {
+        "share_of_users": 0.05134317211897914,
+        "dr_uplift": 0.004318128052287807,
+        "dr_ci": [
+          0.0007057661532886123,
+          0.007930489951287001
+        ],
+        "dr_p_value": 0.019134897450399223,
+        "naive_uplift": 0.0029075529295154168,
+        "control_rate": 0.1523574841482105
+      },
+      "bottom_5pct": {
+        "share_of_users": 0.04989391679967801,
+        "dr_uplift": 0.004497077782993213,
+        "dr_ci": [
+          0.0007967811619185366,
+          0.00819737440406789
+        ],
+        "dr_p_value": 0.017218847677436484,
+        "naive_uplift": 0.0027466019261575547,
+        "control_rate": 0.15586668318671787
+      },
+      "bottom_10pct": {
+        "share_of_users": 0.29815006540485917,
+        "dr_uplift": 0.0009316245829445898,
+        "dr_ci": [
+          0.00029532257191811,
+          0.0015679265939710697
+        ],
+        "dr_p_value": 0.004109538146163501,
+        "naive_uplift": 0.00011684982575884545,
+        "control_rate": 0.02761030419292957
+      }
+    }
+  },
+  "conversion": {
+    "best_model": "visit_model__s_learner",
+    "test_ate_dr": {
+      "estimate": 0.0009914476686908153,
+      "ci": [
+        0.0008656322351295598,
+        0.0011172631022520708
+      ]
+    },
+    "test_ate_naive": {
+      "estimate": 0.0011762254814538023,
+      "se": 6.29279261926637e-05,
+      "ci_low": 0.0010528890124943868,
+      "ci_high": 0.0012995619504132178,
+      "p_value": 5.791674281185125e-78
+    },
+    "budget_table": [
+      {
+        "budget": 0.1,
+        "random": {
+          "incremental": 99.14476686908154,
+          "ci": [
+            86.56322351295597,
+            111.72631022520709
+          ],
+          "share_of_total_incremental": 0.1,
+          "incremental_naive": 117.62254814538024
+        },
+        "s_learner": {
+          "incremental": 879.3169898677626,
+          "ci": [
+            764.5742594214994,
+            994.0597203140258
+          ],
+          "share_of_total_incremental": 0.886902070211009,
+          "incremental_naive": 867.347104381242
+        },
+        "t_learner": {
+          "incremental": 746.8603007628817,
+          "ci": [
+            640.3915344178552,
+            853.3290671079084
+          ],
+          "share_of_total_incremental": 0.7533027958491186,
+          "incremental_naive": 756.1703611993462
+        },
+        "x_learner": {
+          "incremental": 834.2447251489662,
+          "ci": [
+            718.9599097951271,
+            949.5295405028052
+          ],
+          "share_of_total_incremental": 0.8414410074215696,
+          "incremental_naive": 832.9535150212793
+        },
+        "dr_learner": {
+          "incremental": 813.3857513679968,
+          "ci": [
+            701.9471845903068,
+            924.8243181456867
+          ],
+          "share_of_total_incremental": 0.8204021019506301,
+          "incremental_naive": 818.4550374310664
+        },
+        "causal_forest": {
+          "incremental": 836.1198541464184,
+          "ci": [
+            719.9312250855464,
+            952.3084832072905
+          ],
+          "share_of_total_incremental": 0.8433323114779182,
+          "incremental_naive": 828.5037678499006
+        },
+        "response_model": {
+          "incremental": 889.6479991908562,
+          "ci": [
+            771.4335792572434,
+            1007.8624191244692
+          ],
+          "share_of_total_incremental": 0.8973221959012893,
+          "incremental_naive": 871.8804777213603
+        },
+        "visit_model__s_learner": {
+          "incremental": 809.9572563391638,
+          "ci": [
+            700.4160472155138,
+            919.4984654628138
+          ],
+          "share_of_total_incremental": 0.8169440323650108,
+          "incremental_naive": 772.6772561746202
+        },
+        "visit_model__t_learner": {
+          "incremental": 693.9019299160449,
+          "ci": [
+            593.8483367866622,
+            793.9555230454274
+          ],
+          "share_of_total_incremental": 0.6998876005551832,
+          "incremental_naive": 704.2051352599423
+        },
+        "visit_model__x_learner": {
+          "incremental": 812.9053626779985,
+          "ci": [
+            706.0886463940176,
+            919.7220789619793
+          ],
+          "share_of_total_incremental": 0.8199175693775366,
+          "incremental_naive": 790.6161335457236
+        },
+        "visit_model__dr_learner": {
+          "incremental": 762.7839841870402,
+          "ci": [
+            656.5233373916245,
+            869.0446309824559
+          ],
+          "share_of_total_incremental": 0.7693638386323302,
+          "incremental_naive": 716.4747175985624
+        },
+        "visit_model__causal_forest": {
+          "incremental": 817.6000815052877,
+          "ci": [
+            707.389320859135,
+            927.8108421514404
+          ],
+          "share_of_total_incremental": 0.8246527853405622,
+          "incremental_naive": 817.8471432371059
+        },
+        "lift_vs_random": 8.169440323650106,
+        "lift_vs_response": 0.9104244117626612
+      },
+      {
+        "budget": 0.2,
+        "random": {
+          "incremental": 198.28953373816307,
+          "ci": [
+            173.12644702591194,
+            223.45262045041417
+          ],
+          "share_of_total_incremental": 0.2,
+          "incremental_naive": 235.24509629076047
+        },
+        "s_learner": {
+          "incremental": 925.1587082217613,
+          "ci": [
+            805.8444825868689,
+            1044.4729338566538
+          ],
+          "share_of_total_incremental": 0.9331392240232033,
+          "incremental_naive": 1007.5994197568248
+        },
+        "t_learner": {
+          "incremental": 782.7910556082414,
+          "ci": [
+            672.2493157467795,
+            893.3327954697035
+          ],
+          "share_of_total_incremental": 0.7895434931446254,
+          "incremental_naive": 864.6800627897029
+        },
+        "x_learner": {
+          "incremental": 879.0766300886297,
+          "ci": [
+            760.1835871677491,
+            997.9696730095102
+          ],
+          "share_of_total_incremental": 0.8866596370632763,
+          "incremental_naive": 966.7532562511221
+        },
+        "dr_learner": {
+          "incremental": 866.2125831854831,
+          "ci": [
+            750.7698420341485,
+            981.6553243368179
+          ],
+          "share_of_total_incremental": 0.8736846235457871,
+          "incremental_naive": 955.3905261005999
+        },
+        "causal_forest": {
+          "incremental": 914.5938204972739,
+          "ci": [
+            794.4607980480555,
+            1034.7268429464923
+          ],
+          "share_of_total_incremental": 0.922483202471972,
+          "incremental_naive": 995.5440153955813
+        },
+        "response_model": {
+          "incremental": 942.5365793648971,
+          "ci": [
+            820.0049394262218,
+            1065.0682193035725
+          ],
+          "share_of_total_incremental": 0.950666998500784,
+          "incremental_naive": 1017.5205294771735
+        },
+        "visit_model__s_learner": {
+          "incremental": 908.2591628083514,
+          "ci": [
+            790.3541075402825,
+            1026.1642180764206
+          ],
+          "share_of_total_incremental": 0.9160939013631326,
+          "incremental_naive": 970.3367702434539
+        },
+        "visit_model__t_learner": {
+          "incremental": 780.6362452569905,
+          "ci": [
+            672.9860159161611,
+            888.2864745978198
+          ],
+          "share_of_total_incremental": 0.7873700951738617,
+          "incremental_naive": 844.9550005065672
+        },
+        "visit_model__x_learner": {
+          "incremental": 926.6962570812507,
+          "ci": [
+            812.3862818761601,
+            1041.0062322863412
+          ],
+          "share_of_total_incremental": 0.9346900359400033,
+          "incremental_naive": 993.8957379908142
+        },
+        "visit_model__dr_learner": {
+          "incremental": 827.8806970083817,
+          "ci": [
+            713.9226879750887,
+            941.8387060416746
+          ],
+          "share_of_total_incremental": 0.8350220825084795,
+          "incremental_naive": 868.0456842209004
+        },
+        "visit_model__causal_forest": {
+          "incremental": 925.3882239957692,
+          "ci": [
+            806.6783383237218,
+            1044.0981096678165
+          ],
+          "share_of_total_incremental": 0.9333707196242883,
+          "incremental_naive": 1002.5554946518973
+        },
+        "lift_vs_random": 4.580469506815662,
+        "lift_vs_response": 0.9636327997162268
+      },
+      {
+        "budget": 0.3,
+        "random": {
+          "incremental": 297.4343006072446,
+          "ci": [
+            259.6896705388679,
+            335.17893067562125
+          ],
+          "share_of_total_incremental": 0.3,
+          "incremental_naive": 352.8676444361407
+        },
+        "s_learner": {
+          "incremental": 935.6740025126211,
+          "ci": [
+            814.8216094071129,
+            1056.5263956181293
+          ],
+          "share_of_total_incremental": 0.9437452243426603,
+          "incremental_naive": 1061.765457500907
+        },
+        "t_learner": {
+          "incremental": 786.4359966206041,
+          "ci": [
+            674.5736638702165,
+            898.2983293709918
+          ],
+          "share_of_total_incremental": 0.7932198757994715,
+          "incremental_naive": 903.062062473542
+        },
+        "x_learner": {
+          "incremental": 889.5270652916329,
+          "ci": [
+            769.7893311736203,
+            1009.2647994096455
+          ],
+          "share_of_total_incremental": 0.8972002188135998,
+          "incremental_naive": 1022.2205735761469
+        },
+        "dr_learner": {
+          "incremental": 875.3888311025574,
+          "ci": [
+            758.5807836637401,
+            992.1968785413748
+          ],
+          "share_of_total_incremental": 0.8829400267373556,
+          "incremental_naive": 995.226554863956
+        },
+        "causal_forest": {
+          "incremental": 938.8628425312531,
+          "ci": [
+            816.9999628664207,
+            1060.7257221960856
+          ],
+          "share_of_total_incremental": 0.9469615716288895,
+          "incremental_naive": 1062.0141276288434
+        },
+        "response_model": {
+          "incremental": 954.6728798186293,
+          "ci": [
+            830.5205704763957,
+            1078.825189160863
+          ],
+          "share_of_total_incremental": 0.9629079879518541,
+          "incremental_naive": 1079.4609123523044
+        },
+        "visit_model__s_learner": {
+          "incremental": 931.6072762002358,
+          "ci": [
+            810.8904628600942,
+            1052.3240895403774
+          ],
+          "share_of_total_incremental": 0.9396434180236689,
+          "incremental_naive": 1044.2236464261794
+        },
+        "visit_model__t_learner": {
+          "incremental": 810.0591944233264,
+          "ci": [
+            701.043206205718,
+            919.0751826409347
+          ],
+          "share_of_total_incremental": 0.8170468497777513,
+          "incremental_naive": 917.6861314722754
+        },
+        "visit_model__x_learner": {
+          "incremental": 915.8212886621956,
+          "ci": [
+            798.9653456025765,
+            1032.6772317218147
+          ],
+          "share_of_total_incremental": 0.9237212589056942,
+          "incremental_naive": 1032.942217758832
+        },
+        "visit_model__dr_learner": {
+          "incremental": 852.5857242897997,
+          "ci": [
+            736.3376080197588,
+            968.8338405598405
+          ],
+          "share_of_total_incremental": 0.8599402179397126,
+          "incremental_naive": 945.6983985167079
+        },
+        "visit_model__causal_forest": {
+          "incremental": 937.7194669041531,
+          "ci": [
+            816.7372448563383,
+            1058.701688951968
+          ],
+          "share_of_total_incremental": 0.9458083331240175,
+          "incremental_naive": 1057.417546178351
+        },
+        "lift_vs_random": 3.132144726745563,
+        "lift_vs_response": 0.9758392595977214
+      },
+      {
+        "budget": 0.5,
+        "random": {
+          "incremental": 495.7238343454076,
+          "ci": [
+            432.8161175647799,
+            558.6315511260354
+          ],
+          "share_of_total_incremental": 0.5,
+          "incremental_naive": 588.1127407269012
+        },
+        "s_learner": {
+          "incremental": 946.7155638861304,
+          "ci": [
+            825.1967394054067,
+            1068.2343883668545
+          ],
+          "share_of_total_incremental": 0.9548820313796768,
+          "incremental_naive": 1107.7753304155706
+        },
+        "t_learner": {
+          "incremental": 800.9411510095306,
+          "ci": [
+            688.4895692943885,
+            913.3927327246728
+          ],
+          "share_of_total_incremental": 0.8078501531675955,
+          "incremental_naive": 946.9289511863748
+        },
+        "x_learner": {
+          "incremental": 905.0980675165054,
+          "ci": [
+            784.9167274383148,
+            1025.2794075946958
+          ],
+          "share_of_total_incremental": 0.9129055381326049,
+          "incremental_naive": 1064.742975105909
+        },
+        "dr_learner": {
+          "incremental": 893.3106480152638,
+          "ci": [
+            775.3804242714205,
+            1011.2408717591072
+          ],
+          "share_of_total_incremental": 0.9010164391176196,
+          "incremental_naive": 1058.101055784852
+        },
+        "causal_forest": {
+          "incremental": 965.7562049246851,
+          "ci": [
+            843.0850692979052,
+            1088.427340551465
+          ],
+          "share_of_total_incremental": 0.9740869189797429,
+          "incremental_naive": 1128.1912367227492
+        },
+        "response_model": {
+          "incremental": 974.9661091680365,
+          "ci": [
+            849.8996651499842,
+            1100.0325531860888
+          ],
+          "share_of_total_incremental": 0.98337626882058,
+          "incremental_naive": 1138.503231919069
+        },
+        "visit_model__s_learner": {
+          "incremental": 951.4571223596539,
+          "ci": [
+            829.181411048634,
+            1073.732833670674
+          ],
+          "share_of_total_incremental": 0.9596644910326251,
+          "incremental_naive": 1119.7575503381554
+        },
+        "visit_model__t_learner": {
+          "incremental": 816.7732113991595,
+          "ci": [
+            706.6440989606908,
+            926.9023238376283
+          ],
+          "share_of_total_incremental": 0.8238187825663966,
+          "incremental_naive": 959.8620562512043
+        },
+        "visit_model__x_learner": {
+          "incremental": 939.4258524707022,
+          "ci": [
+            821.6277026633139,
+            1057.2240022780904
+          ],
+          "share_of_total_incremental": 0.947529438150975,
+          "incremental_naive": 1105.3687083567347
+        },
+        "visit_model__dr_learner": {
+          "incremental": 880.1691446726347,
+          "ci": [
+            762.4608411649858,
+            997.8774481802835
+          ],
+          "share_of_total_incremental": 0.887761575792375,
+          "incremental_naive": 1019.4069939014933
+        },
+        "visit_model__causal_forest": {
+          "incremental": 949.9653164757032,
+          "ci": [
+            827.6677827445765,
+            1072.2628502068299
+          ],
+          "share_of_total_incremental": 0.9581598166750559,
+          "incremental_naive": 1112.0518878380738
+        },
+        "lift_vs_random": 1.9193289820652502,
+        "lift_vs_response": 0.9758873805075713
+      }
+    ],
+    "response_model": {
+      "deciles": [
+        {
+          "share_of_users": 0.10000004768855937,
+          "dr_uplift": 0.008896447398159951,
+          "dr_ci": [
+            0.0077143060158374336,
+            0.01007858878048247
+          ],
+          "dr_p_value": 3.071595521544622e-49,
+          "naive_uplift": 0.008718729092504061,
+          "control_rate": 0.018673535093367676,
+          "decile": 1
+        },
+        {
+          "share_of_users": 0.10000004768855937,
+          "dr_uplift": 0.0005289148165722933,
+          "dr_ci": [
+            0.0002070148632677515,
+            0.0008508147698768351
+          ],
+          "dr_p_value": 0.0012800160393056025,
+          "naive_uplift": 0.0005346953060450224,
+          "control_rate": 0.001326259946949602,
+          "decile": 2
+        },
+        {
+          "share_of_users": 0.10000004768855937,
+          "dr_uplift": 0.00012135843769579902,
+          "dr_ci": [
+            -7.827216440490774e-05,
+            0.00032098903979650576
+          ],
+          "dr_p_value": 0.23346068847684787,
+          "naive_uplift": 0.00011508109934781595,
+          "control_rate": 0.0005462945620278454,
+          "decile": 3
+        },
+        {
+          "share_of_users": 0.10000004768855937,
+          "dr_uplift": 0.00020805020551680335,
+          "dr_ci": [
+            9.20987599119501e-05,
+            0.0003240016511216566
+          ],
+          "dr_p_value": 0.00043688401015075373,
+          "naive_uplift": 0.00020612301100867155,
+          "control_rate": 0.0001566808723990975,
+          "decile": 4
+        },
+        {
+          "share_of_users": 0.10000004768855937,
+          "dr_uplift": -5.114520747529724e-06,
+          "dr_ci": [
+            -0.00010120912457820412,
+            9.098008308314467e-05
+          ],
+          "dr_p_value": 0.9169179883396127,
+          "naive_uplift": -1.4544109123617167e-06,
+          "control_rate": 0.00012522305356416115,
+          "decile": 5
+        },
+        {
+          "share_of_users": 0.10000004768855937,
+          "dr_uplift": 4.5599847441381136e-05,
+          "dr_ci": [
+            -2.525150267614031e-05,
+            0.00011645119755890259
+          ],
+          "dr_p_value": 0.20715376151417875,
+          "naive_uplift": 4.688335687519268e-05,
+          "control_rate": 6.277069863787583e-05,
+          "decile": 6
+        },
+        {
+          "share_of_users": 0.10000004768855937,
+          "dr_uplift": 3.231940098969747e-05,
+          "dr_ci": [
+            -3.765976639975882e-05,
+            0.00010229856837915376
+          ],
+          "dr_p_value": 0.3653615641021506,
+          "naive_uplift": 3.257630968606227e-05,
+          "control_rate": 6.29663444888707e-05,
+          "decile": 7
+        },
+        {
+          "share_of_users": 0.10000004768855937,
+          "dr_uplift": 4.72006046892987e-06,
+          "dr_ci": [
+            -4.3797222920499525e-05,
+            5.323734385835926e-05
+          ],
+          "dr_p_value": 0.8487783609827934,
+          "naive_uplift": 4.942317176727314e-06,
+          "control_rate": 3.1570639305445934e-05,
+          "decile": 8
+        },
+        {
+          "share_of_users": 0.09999980924576252,
+          "dr_uplift": 4.671105241915729e-05,
+          "dr_ci": [
+            6.762860990883218e-06,
+            8.665924384743137e-05
+          ],
+          "dr_p_value": 0.02191904331831641,
+          "naive_uplift": 4.603136239808444e-05,
+          "control_rate": 1.5770383220312254e-05,
+          "decile": 9
+        },
+        {
+          "share_of_users": 0.09999980924576252,
+          "dr_uplift": 3.546545626669961e-05,
+          "dr_ci": [
+            -3.410662057232611e-05,
+            0.00010503753310572533
+          ],
+          "dr_p_value": 0.31773542495548646,
+          "naive_uplift": 3.5036955819369556e-05,
+          "control_rate": 6.324010687578062e-05,
+          "decile": 10
+        }
+      ],
+      "spearman_with_uplift_score": 0.7528019525956752,
+      "top_decile_overlap": 0.7160808513377859,
+      "top_response_decile": {
+        "share_of_users": 0.09999980924576252,
+        "dr_uplift": 0.008896479991908563,
+        "dr_ci": [
+          0.007714335792572434,
+          0.010078624191244692
+        ],
+        "dr_p_value": 3.0707358822170542e-49,
+        "naive_uplift": 0.008718804777213603,
+        "control_rate": 0.018673535093367676
+      },
+      "top_uplift_decile": {
+        "share_of_users": 0.09999980924576252,
+        "dr_uplift": 0.008099572563391638,
+        "dr_ci": [
+          0.0070041604721551385,
+          0.009194984654628138
+        ],
+        "dr_p_value": 1.3583442365040036e-47,
+        "naive_uplift": 0.0077267725617462014,
+        "control_rate": 0.01537638244737781
+      }
+    },
+    "do_not_disturb": {
+      "predicted_negative": {
+        "share_of_users": 0.029303189077030854,
+        "dr_uplift": 0.0007706118264253705,
+        "dr_ci": [
+          -9.251912227167271e-05,
+          0.0016337427751224136
+        ],
+        "dr_p_value": 0.08013985402213199,
+        "naive_uplift": 0.0006712197075059768,
+        "control_rate": 0.0034845045140172114
+      },
+      "bottom_5pct": {
+        "share_of_users": 0.051105444650512005,
+        "dr_uplift": 0.00040608122208454615,
+        "dr_ci": [
+          -9.657206467889154e-05,
+          0.0009087345088479838
+        ],
+        "dr_p_value": 0.1133288022854933,
+        "naive_uplift": 0.00030465100771526676,
+        "control_rate": 0.0021119647393713077
+      },
+      "bottom_10pct": {
+        "share_of_users": 0.1002964320850535,
+        "dr_uplift": 0.00021871851741498354,
+        "dr_ci": [
+          -4.205071708287628e-05,
+          0.00047948775191284336
+        ],
+        "dr_p_value": 0.10019537685709598,
+        "naive_uplift": 0.00015836371286736465,
+        "control_rate": 0.0011160889727265583
+      }
+    }
+  }
+}
